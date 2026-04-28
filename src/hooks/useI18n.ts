@@ -132,7 +132,7 @@ const translations: Record<string, Record<string, string>> = {
     'contact.success': 'Thank you! We have received your message and will contact you soon.',
     'footer.phone': '(321) 442-7567',
     'footer.email': 'luxuryservicesfl@gmail.com',
-    'footer.address': 'Central Florida',
+    'footer.address': 'Central, Florida',
     'footer.copyright': '© 2026 Luxury Services. All rights reserved.',
     'lang.es': 'ES',
     'lang.en': 'EN',
