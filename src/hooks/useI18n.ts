@@ -48,7 +48,7 @@ const translations: Record<string, Record<string, string>> = {
     'projects.living.title': 'Open-Concept Living',
     'projects.living.loc': 'Aventura, FL',
     'projects.living.cat': 'Whole House',
-    'about.title': '5 Años Transformando Hogares',
+    'about.title': 'Mas de 5 Años Transformando Hogares',
     'about.subtitle': 'Desde 2020, Luxury Services ha sido sinónimo de excelencia en la remodelación de casas en Miami y sus alrededores. Nuestro equipo de artesanos, diseñadores y project managers trabaja con pasión para convertir cada visión en una realidad que supera las expectativas.',
     'about.stat1': 'Años de Experiencia',
     'about.stat2': 'Proyectos Exitosos',
