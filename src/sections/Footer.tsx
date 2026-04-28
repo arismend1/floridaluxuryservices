@@ -88,7 +88,7 @@ export default function Footer() {
               <span className="ml-1.5 font-display text-xl text-gold/80">Services</span>
             </div>
             <div className="space-y-1 font-body text-[13px] leading-relaxed text-[#A0A0A0]">
-              <p>Luxury Services, Miami, FL 33131</p>
+              <p>Luxury Services, Central Florida, FL</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </div>
