@@ -117,7 +117,7 @@ const translations: Record<string, Record<string, string>> = {
     'projects.living.loc': 'Aventura, FL',
     'projects.living.cat': 'Whole House',
     'about.title': '5 Years Transforming Homes',
-    'about.subtitle': 'Since 2020, Luxury Services has been synonymous with excellence in home remodeling in Miami and surrounding areas. Our team of craftsmen, designers, and project managers works with passion to turn every vision into a reality that exceeds expectations.',
+    'about.subtitle': 'Since 2020, Luxury Services has been synonymous with excellence in home remodeling in Cental Florida and surrounding areas. Our team of craftsmen, designers, and project managers works with passion to turn every vision into a reality that exceeds expectations.',
     'about.stat1': 'Years of Experience',
     'about.stat2': 'Successful Projects',
     'about.stat3': 'Quality Guarantee',
