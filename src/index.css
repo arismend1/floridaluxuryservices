@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #B38728;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  .text-gold {
+    color: #B38728;
+  }
+
+  .text-gold-hover {
+    color: #D4A848;
+  }
+
+  .bg-gold {
+    background-color: #B38728;
+  }
+
+  .bg-gold-hover {
+    background-color: #D4A848;
+  }
+
+  .border-gold {
+    border-color: #B38728;
+  }
+
+  /* Pill button variants */
+  .btn-outline-black {
+    @apply inline-flex items-center justify-center rounded-full border border-black px-9 py-3.5 text-sm font-medium tracking-wide text-black transition-all duration-300;
+  }
+  .btn-outline-black:hover {
+    @apply bg-black text-white;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center rounded-full border border-gold px-9 py-3.5 text-sm font-medium tracking-wide text-gold transition-all duration-300;
+  }
+  .btn-outline-gold:hover {
+    @apply bg-gold text-dark;
+  }
+
+  .btn-solid-gold {
+    @apply inline-flex items-center justify-center rounded-full bg-gold px-9 py-3.5 text-sm font-medium tracking-wide text-dark transition-all duration-300;
+  }
+  .btn-solid-gold:hover {
+    background-color: #D4A848;
+  }
+
+  /* Service icon hover */
+  .service-icon-circle {
+    @apply flex h-[72px] w-[72px] items-center justify-center rounded-full border-[1.5px] border-gold transition-all duration-300;
+  }
+  .service-icon-circle:hover {
+    border-color: #D4A848;
+  }
+  .service-icon-circle:hover svg {
+    transform: scale(1.1);
+  }
+
+  /* Arrow circle button */
+  .arrow-circle {
+    @apply relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-black transition-all duration-300;
+  }
+  .arrow-circle:hover {
+    @apply border-gold;
+  }
+  .arrow-circle svg {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .arrow-circle:hover svg {
+    transform: translateX(100%);
+  }
+  .arrow-circle::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23B38728' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .arrow-circle:hover::after {
+    transform: translateX(0);
+  }
+
+  /* Form input styles */
+  .form-input-gold {
+    @apply w-full border-b border-white/15 bg-transparent py-3.5 text-white transition-colors duration-300 placeholder-white/30 focus:border-gold focus:outline-none;
+  }
+
+  .form-textarea-gold {
+    @apply w-full rounded-lg border border-white/15 bg-transparent p-3.5 text-white transition-colors duration-300 placeholder-white/30 focus:border-gold focus:outline-none;
+  }
+}
+
+/* Smooth scroll with Lenis */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
